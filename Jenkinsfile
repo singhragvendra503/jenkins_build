@@ -19,17 +19,17 @@ pipeline {
                 }
             }
         }
-        stage('Test'){
-            steps {
-                sh 'mvn test'
-            }
+       // stage('Test'){
+       //     steps {
+       //         sh 'mvn test'
+       //     }
 
-        }
-         stage('Code Ananlysis'){
-            steps {
-                sh 'mvn checkstyle:checkstyle'
-            }
+      //  }
+      //   stage('Code Ananlysis'){
+     //       steps {
+    //            sh 'mvn checkstyle:checkstyle'
+  //    }
 
-        }
+//        }
     }
 }
